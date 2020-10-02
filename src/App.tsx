@@ -7,7 +7,7 @@ import {
 
 export const App = () => {
     const [terms, setTerms] = React.useState<number[]>([]);
-    const [rang, setRang] = React.useState<number>(0);
+    const [rang, setRang] = React.useState<number>(1);
     
     return (
         <div className="app">
