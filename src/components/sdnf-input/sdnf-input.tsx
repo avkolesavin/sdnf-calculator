@@ -21,7 +21,7 @@ export const SDNFInput = ({
 }: SDNFInputProps) => {
     const [inputValue, setInputValue] = React.useState('');
     const [terms, setTerms] = React.useState<number[]>([]);
-    const [rang, setRang] = React.useState(1);
+    const [rang, setRang] = React.useState('1');
 
     const handleOnTermsInputChange = React.useCallback(({ 
         target: { 
