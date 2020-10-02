@@ -1,0 +1,47 @@
+.sdnf-input {
+  display: flex;
+  font-size: 14pt;
+  align-items: flex-start;
+  flex-direction: column;
+
+  &__input-wrapper {
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image {
+    height: 1em;
+  }
+
+  &__input {
+    height: 1em;
+    padding: 5px 4px;
+    margin: 0 2px;
+    outline: none;
+    border: 1px dashed rgba(black, 0.2);
+    margin-top: 5px;
+    // font-family: 'Courier New', Courier, monospace;
+    
+    &:focus {
+      border: 1px dashed black;
+    }
+  }
+
+  &__brackets {
+  }
+
+  &__button {
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 3em;
+    margin-left: 20px;
+    outline: none;
+    transition: all 200ms ease;
+    padding: 0 15px;
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

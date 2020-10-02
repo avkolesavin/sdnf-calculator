@@ -1,12 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import {
+    SDNFInput,
+    TermsMinimizer
+} from './components';
+
+export const App = () => {
+    const [terms, setTerms] = React.useState<number[]>([]);
+    const [rang, setRang] = React.useState<number>(0);
+    
     return (
         <div className="app">
+            <SDNFInput onTermsChange={setTerms} onRangChange={setRang}/>
+            <TermsMinimizer terms={terms} rang={rang}/>
         </div>
     );
-}
-
-export default App;
+};

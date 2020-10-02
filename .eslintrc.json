@@ -26,7 +26,87 @@
     ],
     "rules": {
         "no-unused-vars": "warn",
+        "no-console": "warn",
+        "block-spacing": "error",
+        "brace-style": "error",
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ],
+        "newline-per-chained-call": "error",
+        "no-nested-ternary": "error",
+        "no-multiple-empty-lines": [
+            "error",
+            {
+                "max": 1,
+                "maxEOF": 0
+            }
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "minProperties": 2,
+                "multiline": true,
+                "consistent": true
+            }
+        ],
+        "multiline-ternary": [
+            "error",
+            "always-multiline"
+        ],
+        "operator-linebreak": [
+            "error"
+        ],
+        "arrow-spacing": [
+            "error",
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "arrow-parens": [
+            "error",
+            "as-needed"
+        ],
+        "sort-imports": [
+            "error",
+            {
+                "ignoreDeclarationSort": true
+            }
+        ],
+        "no-var": "error",
+        "prefer-rest-params": "error",
+        "prefer-spread": "error",
+        "no-with": "error",
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "always-multiline",
+                "objects": "always-multiline"
+            }
+        ],
+        "comma-spacing": [
+            "error",
+            {
+                "before": false,
+                "after": true
+            }
+        ],
+        "arrow-body-style": [
+            "error",
+            "as-needed"
+        ],
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
         "indent": [
+            "error",
+            4
+        ],
+        "@typescript-eslint/indent": [
             "error",
             4
         ],
