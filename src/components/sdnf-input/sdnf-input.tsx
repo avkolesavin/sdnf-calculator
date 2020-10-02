@@ -50,7 +50,7 @@ export const SDNFInput = ({
         if(rang !== value){
             setRang(value);
         }
-    }, []);
+    }, [rang]);
 
     React.useEffect(() => onTermsChange && onTermsChange(terms), [terms, onTermsChange]);
     React.useEffect(() => onRangChange && onRangChange(Number(rang)), [rang, onRangChange]);
